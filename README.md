@@ -4,19 +4,18 @@
 LIS 2360:  Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+April 11, 2017
 
 ### Student Name:  
-(First and Last Name)
+Julia Cournoyer
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+In this project, we are able to utilize information from a third party website using jQuery and AJAX to retreieve JSON information.
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+https://juliacournoyer.github.io/lesson8_ajax/#
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. Utilizing API to make product information more readily available.
+2. How XML and other applications can create a faster response
+3. How to transmit data between web and server applications

@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Julia Cournoyer
+Date: 4/11/17
 Filename:   index.html
 - ->
     
@@ -53,7 +53,43 @@ Filename:   index.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Year:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Writer:</h3>
+            <p class="list-group-item-text lead text-primary" id="Writer">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Response:</h3>
+            <p class="list-group-item-text lead text-primary" id="Response">  </p>
+        </a> 
+<a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Language:</h3>
+            <p class="list-group-item-text lead text-primary" id="Language">  </p>
+        </a> 
+<a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbID:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbID">  </p>
+        </a> 
+<a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbRating:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbRating">  </p>
+        </a> 
+<a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbVotes:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbVotes">  </p>
+        </a> 
 
+        
+        
+        
     </div>
 </div> 
     <script>
@@ -66,11 +102,20 @@ Filename:   index.html
                       data: message             
                 })
                 .done(function(json){
-                     $('#Title').html(json.Title);
+                      $('#Title').html(json.Title);
                      $('#Rated').html(json.Rated);
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Year').html(json.Year);
+                     $('#Writer').html(json.Writer);
+                     $('#imdbID').html(json.imdbID);
+                     $('#imdbRating').html(json.Rating);
+                     $('#imdbVotes').html(json.imdbVotes);
+                     $('#Language').html(json.Language);
+                     $('#Response').html(json.Response);
+                     $('#Runtime').html(json.Runtime);
+
                 })
                 .fail(function() {
                       alert("Posting failed.");              
